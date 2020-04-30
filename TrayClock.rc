@@ -1,0 +1,326 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TRAYMENU MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "About",                       ID_TRAY_INFO
+        MENUITEM "Alarms",                      ID_TRAY_ALARMS
+        MENUITEM "Settings",                    ID_TRAY_SETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_TRAY_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CONFIGURATION DIALOG DISCARDABLE  0, 0, 245, 348
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Configuration"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Screen Positions",IDC_SCREENPOSITIONS,6,3,104,89,
+                    BS_CENTER
+    CONTROL         "UL",IDC_UPPERLEFT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP,24,24,25,10
+    CONTROL         "UR",IDC_UPPERRIGHT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,67,24,25,10
+    CONTROL         "M",IDC_MIDDLE,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,
+                    46,46,25,10
+    CONTROL         "LL",IDC_LOWERLEFT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,24,69,25,10
+    CONTROL         "LR",IDC_LOWERRIGHT,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,67,69,25,10
+    PUSHBUTTON      "BG",IDC_CHOSEBG,119,71,32,14
+    PUSHBUTTON      "FG",IDC_CHOSEFG,159,71,33,14
+    PUSHBUTTON      "SP",IDC_CHOSESP,201,71,31,14
+    CONTROL         "Enabled",IDC_AUTOHIDE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,106,42,10
+    CONTROL         "Slider2",IDC_VISIBILITYSLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,63,119,128,15
+    CONTROL         "100x100",IDC_SIZE1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE | WS_GROUP,76,161,43,10
+    CONTROL         "200x200",IDC_SIZE2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,126,161,43,10
+    CONTROL         "300x300",IDC_SIZE3,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,176,161,43,10
+    CONTROL         "Show Date",IDC_SHOWDATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,193,51,10
+    CONTROL         "Classic Window",IDC_CLASSIC,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,17,209,66,10
+    CONTROL         "Round Window",IDC_ROUND,"Button",BS_AUTORADIOBUTTON,17,
+                    227,65,10
+    CONTROL         "Window Transparency",IDC_TRANS,"Button",
+                    BS_AUTORADIOBUTTON,17,248,87,10
+    CONTROL         "Slider1",IDC_TRANSPARENCYSLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,26,260,179,15
+    CONTROL         "Clock shaped window / transparent background",IDC_SHAPE,
+                    "Button",BS_AUTORADIOBUTTON,17,278,168,10
+    CONTROL         "Skin:",IDC_SKIN,"Button",BS_AUTORADIOBUTTON,17,298,32,
+                    10
+    EDITTEXT        IDC_SKINFILE,49,296,141,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search",IDC_SEARCH,196,296,33,14
+    PUSHBUTTON      "Refresh Time",IDC_REFRESH,7,327,50,14
+    DEFPUSHBUTTON   "OK",IDOK,188,327,50,14
+    GROUPBOX        "Colors",IDC_COLORS,114,3,124,89,BS_CENTER | WS_GROUP
+    GROUPBOX        "Appearance",IDC_APP,6,185,231,137,BS_CENTER | WS_GROUP
+    LTEXT           "Background:",IDC_STATIC,119,17,42,8
+    LTEXT           "Foreground:",IDC_STATIC,119,34,39,8
+    LTEXT           "Special:",IDC_STATIC,119,51,26,8
+    LTEXT           "RGB(0,0,0)",IDC_BKGNDSTATIC,169,17,36,8
+    LTEXT           "RGB(0,0,0)",IDC_FGNDSTATIC,169,35,36,8
+    LTEXT           "RGB(0,0,0)",IDC_SPECIALSTATIC,169,52,36,8
+    GROUPBOX        "Auto Hide",IDC_AH,6,96,231,43,BS_CENTER | WS_GROUP
+    LTEXT           "Visibility time:",IDC_STATIC,16,122,42,8
+    LTEXT           "1000 ms",IDC_VISIBILITYTIME,196,122,33,8
+    LTEXT           "100 %",IDC_TRANSPARENCYVALUE,209,259,20,8
+    GROUPBOX        "Window Size",IDC_WS,6,146,232,33,BS_CENTER | WS_GROUP
+    LTEXT           "Window Size:",IDC_STATIC,14,162,44,8
+    CONTROL         "",IDC_BKGNDINDSTATIC,"Static",SS_OWNERDRAW,211,17,20,8
+    CONTROL         "",IDC_FGNDINDSTATIC,"Static",SS_OWNERDRAW,211,35,20,8
+    CONTROL         "",IDC_SPINDSTATIC,"Static",SS_OWNERDRAW,211,52,20,8
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 212, 213
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "About TrayClock"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,155,192,50,14
+    ICON            IDI_CLOCK,IDC_STATIC,7,7,20,20
+    EDITTEXT        IDC_ABOUTTEXT,35,7,170,182,ES_MULTILINE | ES_READONLY | 
+                    ES_WANTRETURN | NOT WS_BORDER
+END
+
+IDD_ALARM DIALOG DISCARDABLE  0, 0, 375, 149
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Alarms"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,318,128,50,14
+    LISTBOX         IDC_ALARMSLIST,7,7,304,135,LBS_NOINTEGRALHEIGHT | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add...",IDC_ADD,318,7,50,14
+    PUSHBUTTON      "Edit...",IDC_EDIT,318,24,50,14
+    PUSHBUTTON      "Remove...",IDC_REMOVE,318,42,50,14
+    PUSHBUTTON      "Clear all",IDC_CLEARALL,318,59,50,14
+    PUSHBUTTON      "Clear Disabled",IDC_CLEARD,318,77,50,14
+END
+
+IDD_ADDALARM DIALOG DISCARDABLE  0, 0, 216, 159
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Add Alarm"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,95,138,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,153,138,50,14
+    LTEXT           "Alarm Time:",IDC_STATIC,11,36,38,8
+    EDITTEXT        IDC_ALARMHOUR,56,34,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           ":",IDC_STATIC,102,36,8,8
+    EDITTEXT        IDC_ALARMMINUTE,110,34,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           ":",IDC_STATIC,155,36,8,8
+    EDITTEXT        IDC_ALARMSECOND,163,34,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,7,202,126
+    LTEXT           "Alarm Date:",IDC_STATIC,11,57,38,8
+    EDITTEXT        IDC_ALARMDAY,56,54,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           ".",IDC_STATIC,102,57,8,8
+    EDITTEXT        IDC_ALARMMONTH,110,54,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           ".",IDC_STATIC,156,57,8,8
+    EDITTEXT        IDC_ALARMYEAR,164,54,40,14,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Alarm Action:",IDC_STATIC,11,75,42,8
+    COMBOBOX        IDC_ALARMACTION,56,73,148,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Path/Text:",IDC_STATIC,11,97,35,8
+    EDITTEXT        IDC_ALARMPATH,56,94,147,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search...",IDC_SEARCH,153,113,50,14
+    CONTROL         "Active",IDC_ALARMACTIVE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,56,116,36,10
+    PUSHBUTTON      "How To...",IDC_HOWTO,7,138,50,14
+    LTEXT           "Alarm Mode:",IDC_STATIC,11,16,40,8
+    COMBOBOX        IDC_ALARMMODE,56,14,148,79,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_CONFIGURATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 341
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 206
+    END
+
+    IDD_ALARM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 368
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_ADDALARM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CLOCK               ICON    DISCARDABLE     "CLOCL.ICO"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "omega237\0"
+            VALUE "FileDescription", "TrayClock\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "TrayClock\0"
+            VALUE "LegalCopyright", "Copyright © 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TrayClock.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "TrayClock\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x407, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

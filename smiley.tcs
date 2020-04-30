@@ -1,0 +1,15 @@
+[SkinInfo]
+ImageFile=smiley.bmp
+CenterX=107
+CenterY=106
+MinuteHand=100
+SecondHand=0
+HourHand=30
+TransCol=0
+IrregularShape=0
+top=0
+left=0
+right=210
+bottom=210
+ColSecondHand=0
+ColOtherHands=0
